@@ -115,14 +115,14 @@
     padding-bottom: 160px;
     position: relative;
     width: 100%;
-    .decor__img {
+    &__decor-img {
         position: absolute;
-        top: 30%;
+        top: 25%;
         right: 0;
         left: auto;
-        max-width: 70.5vw;
-        width: 100%;
-        height: auto;
+    }
+    &__decor-img--mob {
+        display: none;
     }
     &__title {
         margin-bottom: 16px;
@@ -141,12 +141,16 @@
         display: flex;
         align-items: center;
         width: 100%;
+        cursor: pointer;
     }
     &__list-item.active {
         color: var(--blue);
     }
     &__item-text {
         margin-left: 20px;
+    }
+    &__item-text.active {
+        color: var(--blue);
     }
     &__list-img {
         margin: 0 auto;
@@ -193,6 +197,13 @@
     }
     &__subtitle {
         margin-bottom: 16px;
+
+    }
+    &__description{
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0px;
     }
     &__decor-img {
         position: absolute;
@@ -488,12 +499,13 @@
     &__main-wrapper {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         flex-wrap: wrap;
         margin-bottom: 40px;
     }
-    &__main-inner{
+    &__main-inner {
         display: flex;
-        span{
+        span {
             margin-right: 16px;
         }
     }
@@ -502,20 +514,20 @@
         flex-direction: row;
         align-items: center;
     }
+    &__main-logo{
+        margin-right: 30px;
+    }
     &__menu-link {
         margin-right: 48px;
     }
-    &__main-copyrigh{
+    &__main-copyrigh {
         margin-right: 16px;
     }
-    &__main-address{
+    &__main-address {
         margin-right: 16px;
     }
-    &__main-mail{
+    &__main-mail {
         margin-right: 16px;
-    }
-    &__main-number{
-
     }
 }
 

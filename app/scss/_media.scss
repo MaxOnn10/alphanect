@@ -1,0 +1,242 @@
+@media (max-width: 1366px) {
+    .products__decor-img {
+        width: 76%;
+    }
+    .benefits {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 80px 15px 80px;
+            border-radius: 10px;
+        }
+        &__decor {
+            order: 1;
+        }
+        &__decor-img {
+            position: relative;
+        }
+    }
+}
+@media (max-width: 1024px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+    }
+    .products {
+        &__decor-img {
+            display: none;
+        }
+        &__decor-img--mob {
+            display: block;
+            margin-top: 25px;
+        }
+    }
+    .benefits {
+        padding-top: 100px;
+    }
+    .footer{
+        &__main-logo{
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .products {
+        padding: 25px 0 50px;
+        margin-top: 0;
+        &__img {
+            padding-top: 50px;
+        }
+        &__img-container {
+            position: static;
+        }
+    }
+    .fintech {
+        &__table-items {
+            flex-direction: column;
+        }
+        &__table-item--main {
+            display: none;
+        }
+        &__table-item--1 {
+            margin-bottom: 25px;
+        }
+    }
+    .customizable {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__container-img {
+            padding-top: 50px;
+            margin: 0 auto;
+        }
+    }
+    .study {
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        &__decor {
+            margin: 0 auto;
+        }
+        &__inner {
+            text-align: center;
+        }
+    }
+    .footer {
+        &__top-text {
+            span {
+                display: block;
+            }
+        }
+        &__top-btn{
+            margin-top: 35px;
+        }
+        &__main-wrapper{
+            flex-direction: column;
+        }
+        &__menu-list{
+            flex-direction: column;
+        }
+        &__menu-item{
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        &__menu-link{
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+        &__main-copyrigh{
+            order: 1;
+            margin-top: 30px;
+            margin-right: 0;
+        }
+        
+    }
+}
+@media (max-width: 768px){
+    .footer{
+        &__main-inner{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__menu-link {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+        &__main-copyrigh {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+        &__main-address {
+            margin-bottom: 15px;
+            margin-right: 0;
+        }
+        &__main-mail {
+            margin: 15px 0;
+            margin-right: 0;
+        }
+        &__main-number {
+            margin: 15px 0;
+            margin-right: 0;
+        }
+        &__main-inner span{
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 576px) {
+    h3 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+    .footer {
+        &__top-container {
+            flex-wrap: wrap;
+        }
+        &__top-text {
+            width: 100%;
+        }
+        &__top-btn {
+        }
+    }
+    .header {
+        height: auto;
+        padding-bottom: 50px;
+        &__wrapper {
+            margin-bottom: 130px;
+        }
+    }
+    .top {
+        &__title {
+            font-size: 32px;
+            line-height: 34px;
+            margin-bottom: 35px;
+        }
+        &__description {
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 35px;
+        }
+        &__btn--1 {
+            min-width: 125px;
+            padding: 6px 14px;
+        }
+        &__btn--2 {
+            padding: 6px 14px;
+            min-width: 125px;
+        }
+    }
+    .products__img {
+        &-container {
+        }
+        &--1 {
+            width: 100%;
+        }
+        &--2 {
+            width: 100%;
+        }
+    }
+    .products {
+        .decor__img {
+            top: 0;
+            left: 0;
+            margin: 0 auto;
+        }
+    }
+    .fintech {
+        &__table-text {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+        &__table-text {
+            padding: 15px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .customizable{
+        &__list{
+            max-width: 100%;
+            margin-right: 0;
+        }
+    }
+    .footer{
+        font-size: 14px;
+    }
+}
+
+// @media (min-width: 768px) and (max-width: 990px) {
+
+// }
+// @media (min-width: 481px) and (max-width: 767px) {
+
+// }
+// @media (max-width: 480px) {
+
+// }
