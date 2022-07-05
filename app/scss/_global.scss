@@ -1,7 +1,7 @@
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    overflow-x: hidden;
+    // overflow-x: hidden;
 }
 *,
 *::before,
@@ -17,7 +17,8 @@ body {
     color: var(--text);
     margin: 0;
     min-width: 320px;
-    overflow-x: hidden;
+    width: 100%;
+    // overflow-x: hidden;
 }
 img {
     max-width: 100%;
@@ -67,7 +68,7 @@ h3 {
     padding: 0 15px;
 }
 .disable-scroll {
-    overflow: hidden;
+    overflow-y: hidden;
 }
 .is-outer {
     position: relative !important; // stylelint-disable-line declaration-no-important

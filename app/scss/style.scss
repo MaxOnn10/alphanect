@@ -6,10 +6,68 @@
 @import "global";
 
 .header {
-    background-image: url("../images/bg.jpg");
+    background-image: url("../images/bg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     padding-bottom: 275px;
+    .burger {
+        display: none;
+        position: fixed;
+        top: 28px;
+        right: 15px;
+        z-index: 999;
+        color: var(--text);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        &__line {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transition: transform 0.3s ease-in-out;
+        }
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: currentColor;
+            transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+        }
+        &::before {
+            top: 0;
+        }
+        &::after {
+            top: calc(100% - 2px);
+        }
+        &--active {
+            .burger__line {
+                transform: scale(0);
+                transition: transform 0.3s ease-in-out;
+            }
+
+            &::before {
+                transform: rotate(45deg);
+                top: 50%;
+                transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            }
+
+            &::after {
+                transform: rotate(-45deg);
+                top: 50%;
+                transition: transform 0.3s ease-in-out, top 0.3s ease-in-out;
+            }
+        }
+    }
     &__wrapper {
         // position: absolute;
         // top: 24px;
@@ -179,7 +237,7 @@
 .benefits {
     padding-top: 400px;
     &__wrapper {
-        background-image: url(../images/benefits-bg.jpg);
+        background-image: url(../images/benefits-bg.webp);
         background-repeat: no-repeat;
         background-size: cover;
         padding: 80px 0 80px 80px;
