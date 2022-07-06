@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We Make Your Business Fintech"><!-- Описание страницы при выдаче в гугл поиске -->
+    <meta name="description" content="We Make Your Business Fintech">
     <meta name="keywords" content="Business, Fintech, Money, financial technology, finance">
     <title>Alphanect</title>
 
@@ -18,14 +18,14 @@
         </button>
         <div class="header__wrapper">
             <a class="header__logo" href="#">
-                <img src="images/logo.svg" alt="logo">
+                <img src="images/logo.svg" alt="Alphanect">
             </a>
             <nav class="header__menu">
                 <ul class="header__menu-list">
-                    <li class="header__menu-item"><a href="#">About us</a></li>
-                    <li class="header__menu-item"><a href="#">Platform Solutions</a></li>
-                    <li class="header__menu-item"><a href="#">Careers</a></li>
-                    <li class="header__menu-item"><a href="#">Contact</a></li>
+                    <li class="header__menu-item"><a href="#products">About us</a></li>
+                    <li class="header__menu-item"><a href="#fintech">Platform Solutions</a></li>
+                    <li class="header__menu-item"><a href="#study">Careers</a></li>
+                    <li class="header__menu-item"><a href="#footer">Contact</a></li>
                     <button class="header__theme"><img src="images/sun.svg" alt="theme"></button>
                     <a class="header__btn" href="#">Book a demo</a>
                 </ul>
@@ -51,45 +51,43 @@
     </header>
 
     <main>
-        <section class="products__img">
+        <div class="products__img">
             <div class="products__img-container">
                 <img class="products__img--1" src="images/main-pictures1.webp" alt="">
                 <img class="products__img--2" src="images/main-pictures2.webp" alt="">
             </div>
-        </section>
+        </div>
 
-
-        <section class="products">
+        <section class="products" id="products">
             <img class="products__decor-img" src="images/products-decor.webp" alt="">
             <div class="container">
                 <h2 class="products__title">Our products</h2>
                 <h3 class="products__subtitle">We build fintech platforms for you</h3>
                 <div class="products__wrapper">
                     <div class="products__list">
-                        <div class="products__list-item products__list-item--1 ">
-                            <img class="product__item-icon " src="images/products-icon.svg" alt="">
-                            <p class="products__item-text active">Products portfolio</p>
+                        <div data-src="images/products-decor.webp" class="products__list-item active products__list-item--1 ">
+                            <img class="products__item-icon active" src="images/products-icon.svg" alt="">
+                            Products portfolio
                         </div>
-                        <div class="products__list-item products__list-item--2">
-                            <img src="images/products-icon.svg" alt="">
-                            <p class="products__item-text">Communication</p>
-
+                        <div data-src="images/transactions.webp" class="products__list-item products__list-item--2">
+                            <img class="products__item-icon" src="images/products-icon.svg" alt="">
+                            Communication
                         </div>
-                        <div class="products__list-item products__list-item--3">
-                            <img src="images/products-icon.svg" alt="">
-                            <p class="products__item-text">Analysing</p>
+                        <div data-src="images/products-mob.webp" class="products__list-item products__list-item--3">
+                            <img class="products__item-icon" src="images/products-icon.svg" alt="">
+                            Analysing
                         </div>
-                        <div class="products__list-item products__list-item--4">
-                            <img src="images/products-icon.svg" alt="">
-                            <p class="products__item-text">Investment process</p>
+                        <div data-src="images/products-decor.webp" class="products__list-item products__list-item--4">
+                            <img class="products__item-icon" src="images/products-icon.svg" alt="">
+                            Investment process
                         </div>
-                        <div class="products__list-item products__list-item--5">
-                            <img src="images/products-icon.svg" alt="">
-                            <p class="products__item-text">Products portfolio</p>
+                        <div data-src="images/transactions.webp" class="products__list-item products__list-item--5">
+                            <img class="products__item-icon" src="images/products-icon.svg" alt="">
+                            Investor center
                         </div>
-                        <div class="products__list-item products__list-item--6">
-                            <img src="images/products-icon.svg" alt="">
-                            <p class="products__item-text">Products portfolio</p>
+                        <div data-src="images/products-decor.webp" class="products__list-item products__list-item--6">
+                            <img class="products__item-icon" src="images/products-icon.svg" alt="">
+                            Pitch creator
                         </div>
                     </div>
                 </div>
@@ -122,7 +120,7 @@
             </div>
         </section>
 
-        <section class="fintech">
+        <section class="fintech" id="fintech">
             <div class="container">
                 <h2 class="fintech__title">
                     Fintech Leader
@@ -226,7 +224,7 @@
             </div>
         </section>
 
-        <section class="study">
+        <section class="study" id="study">
             <div class="container">
                 <div class="study__wrapper">
                     <div class="study__decor">
@@ -259,7 +257,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="container">
             <div class="footer__top">
                 <div class="footer__top-container">
@@ -276,7 +274,7 @@
                 <div class="footer__main-container">
                     <div class="footer__main-wrapper">
                         <a class="footer__main-logo" href="#">
-                            <img src="images/logo-2.svg" alt="">
+                            <img src="images/logo-2.svg" alt="Alphanect">
                         </a>
                         <nav class="footer__main-menu">
                             <ul class="footer__menu-list">
@@ -286,7 +284,7 @@
                                 <li class="footer__menu-item"><a class="footer__menu-link" href="#">Contact</a></li>
                                 <li class="footer__menu-item"><a class="footer__menu-link" href="#">Imprint</a></li>
                                 <li class="footer__menu-item"><a class="footer__menu-link" href="#">Privacy Policy</a></li>
-                                <a class="footer__menu-item" href="#"><img src="images/linked.svg" alt="linkedIn"></a>
+                                <a class="footer__menu-item" href="https://ua.linkedin.com/" target="_blank"><img src="images/linked.svg" alt="linkedIn"></a>
                             </ul>
                         </nav>
                     </div>
@@ -299,21 +297,20 @@
                                 Alpenstrasse 11, 6300 Zug, Switzerland
                             </p>
                             <span>•</span>
-                            <p class="footer__main-mail">
+                            <a class="footer__main-mail" href="mailto:info@alphanect.com">
                                 info@alphanect.com
-                            </p>
+                            </a>
                             <span>•</span>
-                            <p class="footer__main-number">
+                            <a class="footer__main-number" href="tel:+41798866600">
                                 +41 79 886 66 00
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

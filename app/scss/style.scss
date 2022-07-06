@@ -203,13 +203,22 @@
     }
     &__list-item.active {
         color: var(--blue);
+        .products__item-icon{
+            filter: invert(46%) sepia(99%) saturate(401%) hue-rotate(183deg) brightness(86%) contrast(103%);
+        }
     }
-    &__item-text {
-        margin-left: 20px;
+    &__item-icon{
+        padding-right: 20px;
     }
-    &__item-text.active {
-        color: var(--blue);
+    &__item-icon.active{
+        filter: invert(46%) sepia(99%) saturate(401%) hue-rotate(183deg) brightness(86%) contrast(103%);
     }
+    // &__item-text {
+    //     margin-left: 20px;
+    // }
+    // &__item-text.active {
+    //     color: var(--blue);
+    // }
     &__list-img {
         margin: 0 auto;
     }
